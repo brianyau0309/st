@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "CascadiaCode:pixelsize=18:antialias=true:autohint:true";
+static char *font = "CascadiaCode:pixelsize=16:antialias=true:autohint:true";
 /* Spare fonts */
 static char *font2[] = {
-  "NotoCJK:pixelsize=16:antialias=true:autohint=true",
+  "NotoSansCJKHK:pixelsize=16:antialias=true:autohint=true",
   "JoyPixels:pixelsize=15:antialias=true:autohint=true",
   "Symbola:pixelsize=15:antialias=true:autohint=true",
   "Symbols Nerd Font:pixelsize=19:antialias=true:autohint=true"
