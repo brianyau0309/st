@@ -9,8 +9,8 @@ static char *font = "CascadiaCode:pixelsize=16:antialias=true:autohint:true";
 /* Spare fonts */
 static char *font2[] = {
   "NotoSansCJKHK:pixelsize=16:antialias=true:autohint=true",
-  "JoyPixels:pixelsize=15:antialias=true:autohint=true",
-  "Symbola:pixelsize=15:antialias=true:autohint=true",
+  "JoyPixels:pixelsize=16:antialias=true:autohint=true",
+  "Symbola:pixelsize=16:antialias=true:autohint=true",
   "Symbols Nerd Font:pixelsize=19:antialias=true:autohint=true"
 };
 static int borderpx = 2;
@@ -90,7 +90,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.75;
+float alpha = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -118,7 +118,7 @@ static const char *colorname[] = {
   /* more colors can be added after 255 to use with DefaultXX */
   "#add8e6", /* 256 -> cursor */
   "#555555", /* 257 -> rev cursor*/
-  "#080823", /* 258 -> bg */
+  "#080820", /* 258 -> bg */
   "#f8f8f2", /* 259 -> fg */
 
 };
