@@ -11,7 +11,7 @@ static char *font2[] = {
   "NotoSansCJKHK:pixelsize=16:antialias=true:autohint=true",
   "JoyPixels:pixelsize=16:antialias=true:autohint=true",
   "Symbola:pixelsize=16:antialias=true:autohint=true",
-  "Symbols Nerd Font:pixelsize=19:antialias=true:autohint=true"
+  "Symbols Nerd Font:pixelsize=16:antialias=true:autohint=true"
 };
 static int borderpx = 2;
 
@@ -57,6 +57,13 @@ static unsigned int actionfps = 30;
  * attribute.
  */
 static unsigned int blinktimeout = 800;
+
+/*
+ * interval (in milliseconds) between each successive call to ximspot. This
+ * improves terminal performance while not reducing functionality to those
+ * whom need XIM support.
+ */
+int ximspot_update_interval = 1000;
 
 /*
  * thickness of underline and bar cursors
@@ -118,7 +125,7 @@ static const char *colorname[] = {
   /* more colors can be added after 255 to use with DefaultXX */
   "#add8e6", /* 256 -> cursor */
   "#555555", /* 257 -> rev cursor*/
-  "#080820", /* 258 -> bg */
+  "#101022", /* 258 -> bg */
   "#f8f8f2", /* 259 -> fg */
 
 };
