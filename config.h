@@ -94,7 +94,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 1;
 
 /* bg opacity */
 float alpha = 0.7;
@@ -105,7 +105,7 @@ static const char *colorname[] = {
   "#000000", /* black */
   "#ff5555", /* red */
   "#50fa7b", /* green */
-  "#f1fa8c", /* yello */ 
+  "#f1fa8c", /* yello */
   "#93ccff", /* blue */
   "#ff79c6", /* magenta */
   "#8be9fd", /* cyan */
@@ -115,7 +115,7 @@ static const char *colorname[] = {
   "#44475a", /* black */
   "#ff5555", /* red */
   "#50fa7b", /* green */
-  "#f1fa8c", /* yello */ 
+  "#f1fa8c", /* yello */
   "#93ccff", /* blue */
   "#ff79c6", /* magenta */
   "#8be9fd", /* cyan */
@@ -205,9 +205,9 @@ static Shortcut shortcuts[] = {
   { MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
   { MODKEY,               XK_u,           kscrollup,      {.i = -1} },
   { MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-  { MODKEY,               XK_equal,       zoom,           {.f = +2} },
-  { MODKEY,               XK_minus,       zoom,           {.f = -2} },
-  { TERMMOD,              XK_plus,        zoomreset,      {.f =  0} },
+  { ControlMask|ShiftMask,XK_plus,       zoom,           {.f = +2} },
+  { ControlMask,          XK_minus,       zoom,           {.f = -2} },
+  { ControlMask,          XK_equal,        zoomreset,      {.f =  0} },
   { MODKEY,               XK_c,           clipcopy,       {.i =  0} },
   { MODKEY,               XK_v,           clippaste,      {.i =  0} },
   { TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
