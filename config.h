@@ -97,19 +97,19 @@ char *termname = "st-256color";
 unsigned int tabspaces = 1;
 
 /* bg opacity */
-float alpha = 0.65;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  "#000000", /* black */
-  "#ff5555", /* red */
-  "#50fa7b", /* green */
-  "#f1fa8c", /* yello */
-  "#93ccff", /* blue */
-  "#ff79c6", /* magenta */
-  "#8be9fd", /* cyan */
-  "#bbbbbb", /* white */
+  "#1B1918", /* black */
+  "#F22C40", /* red */
+  "#5AB738", /* green */
+  "#D5911A", /* yello */
+  "#407EE7", /* blue */
+  "#6666EA", /* magenta */
+  "#00AD9C", /* cyan */
+  "#A8A19F", /* white */
 
   /* 8 bright colors */
   "#44475a", /* black */
@@ -125,7 +125,7 @@ static const char *colorname[] = {
   /* more colors can be added after 255 to use with DefaultXX */
   "#44bbaa", /* 256 -> cursor */
   "#555555", /* 257 -> rev cursor*/
-  "#101022", /* 258 -> bg */
+  "#161B1D", /* 258 -> bg */
   "#f8f8f2", /* 259 -> fg */
 
 };
@@ -205,9 +205,9 @@ static Shortcut shortcuts[] = {
   { MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
   { MODKEY,               XK_u,           kscrollup,      {.i = -1} },
   { MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-  { ControlMask|ShiftMask,XK_plus,       zoom,           {.f = +2} },
+  { ControlMask|ShiftMask,XK_plus,        zoom,           {.f = +2} },
   { ControlMask,          XK_minus,       zoom,           {.f = -2} },
-  { ControlMask,          XK_equal,        zoomreset,      {.f =  0} },
+  { ControlMask,          XK_equal,       zoomreset,      {.f =  0} },
   { MODKEY,               XK_c,           clipcopy,       {.i =  0} },
   { MODKEY,               XK_v,           clippaste,      {.i =  0} },
   { TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
